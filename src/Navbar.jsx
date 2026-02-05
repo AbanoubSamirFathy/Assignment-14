@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { routes } from "./routes";
 import { useNavigate } from "react-router-dom";
+import logo from "../img/aperture.png"
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ export default function Navbar() {
         <div className="d-flex align-content-center">
           <a className="navbar-brand ms-2" href="#">
             <img
-              src="../img/aperture.png"
+              src={logo}
               alt="Logo"
               width={40}
               className="bg-main-color rounded-3 p-1"
